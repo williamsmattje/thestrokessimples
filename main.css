@@ -1,0 +1,29 @@
+body {
+    font-family: 'Sixtyfour', sans-serif;
+    color: #B1E5FE;
+    font-size: 36px;
+    text-align: center;
+    margin-top: 24px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+html, body {
+    height: 100%;
+}
+
+header {
+    text-align: center;
+}
+
+a {
+    text-decoration: none; 
+    color: inherit; 
+    cursor: pointer; 
+}
+
+.pointer {
+    cursor: pointer;
+}

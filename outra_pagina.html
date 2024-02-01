@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAG 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            background-color: black;
+            color: #B1E5FE;
+            font-family: 'Sixtyfour', sans-serif;
+        }
+        
+        #navbar {
+            color: #B1E5FE;
+            /* Adicionando borda ao texto */
+            text-shadow:
+                -1px -1px 0 #000,  
+                 1px -1px 0 #000,
+                -1px  1px 0 #000,
+                 1px  1px 0 #000;
+            /* Removendo sublinhado */
+            text-decoration: none !important;
+        }
+
+        #menu-navegacao .nav-link {
+            text-decoration: none; 
+            color: inherit;
+            text-shadow:
+                -1px -1px 0 #000,  
+                 1px -1px 0 #000,
+                -1px  1px 0 #000,
+                 1px  1px 0 #000;
+        }
+        #menu-navegacao .nav-link:hover {
+            color: inherit;
+        }
+
+        /* Estilos para links dentro do conteúdo */
+        .conteudo-link {
+            text-decoration: none;
+            color: #B1E5FE; /* Cor padrão */
+        }
+        .conteudo-link:hover {
+            text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+            color: #B1E5FE; /* Cor ao passar o mouse */
+        }
+
+        p {
+            font-size: 12px;
+        }
+
+        #primeira-foto {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh; /* Defina a altura desejada */
+        }
+
+        #primeira-foto img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain; /* Para manter a proporção da imagem */
+        }
+
+        @media (max-width: 768px) {
+            .custom-card {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+        <div class="container">
+            <a href="index.html" style="text-decoration: none;"><h1 id="navbar" class="navbar-brand m-0 section-title">THE STROKES</h1></a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold">
+                    <a href="#sobre-a-banda" class="nav-link">
+                        <i class="bi bi-house-door me-1"></i>
+                        SOBRE A BANDA:
+                    </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#shows-compre" class="nav-link">
+                        <i class="bi bi-calendar-check me-1"></i>
+                        SHOWS:
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#escute" class="nav-link">
+                        <i class="bi bi-card-text me-1"></i>
+                        ESCUTE:
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#fale-conosco" class="nav-link">
+                        <i class="bi bi-chat-left-text me-1"></i>
+                        FALE CONOSCO:
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container mt-3" id="primeira-foto">
+        <div>
+            <img src="img/38aeeb47e0cbdb446b74963d38c17992.jpg" alt="primeira foto da banda">
+        </div>
+    </div>
+    <div class="container pt-5 pb-5 mt-5" id="sobre-a-banda">
+        <div class="row align-items-center">
+            <div class="col-md-5">
+                <img src="img/unnamed.jpg" class="d-block w-100 rounded" alt="foto da banda">
+            </div>
+            <div class="col-md-7 mt-5 mt-md-0">
+                <h2>SOBRE A BANDA</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae dolor possimus delectus accusantium maiores sapiente minus vitae earum ab voluptatem. Esse asperiores aut tenetur dolorum expedita quod nisi, veritatis quis?
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-3">
+        <h1 id="shows-compre">SHOWS:</h1>
+        <div class="row custom-row mt-5">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card text-bg-dark custom-card mx-auto">
+                    <img src="img/guias-de-turismo-em-nyc-300x300.jpg">
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">MADDISON SQUARE</h4>
+                        <h5 class="card-subtitle">2024</h5>
+                        <p class="card-text">THE STROKES' MADDISON SQUARE</p>
+                        <a href="#" class="btn btn-primary btn-dark">COMPRE SEU INGRESSO</a>
+                    </div>
+                    <p>01-02-2024.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card text-bg-dark custom-card mx-auto">
+                    <img src="img/guias-de-turismo-em-nyc-300x300.jpg">
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">MADDISON SQUARE</h4>
+                        <h5 class="card-subtitle">2024</h5>
+                        <p class="card-text">THE STROKES' MADDISON SQUARE</p>
+                        <a href="#" class="btn btn-primary btn-dark">COMPRE SEU INGRESSO</a>
+                    </div>
+                    <p>01-02-2024.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card text-bg-dark custom-card mx-auto">
+                    <img src="img/guias-de-turismo-em-nyc-300x300.jpg">
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">MADDISON SQUARE</h4>
+                        <h5 class="card-subtitle">2024</h5>
+                        <p class="card-text">THE STROKES' MADDISON SQUARE</p>
+                        <a href="#" class="btn btn-primary btn-dark">COMPRE SEU INGRESSO</a>
+                    </div>
+                    <p>01-02-2024.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="escute">
+        <div class="mt-3 mb-3">
+            <h2>ESCUTE:</h2>
+            <iframe class="mt-3" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO04caZO?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+    </div>
+    <section id="fale-conosco" class="pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <h2 class="section-title text-center">Fale <span class="text-colored">conosco</span></h2>
+            </div>
+            <div class="row">
+                <div class="col-md-7 mb-5">
+                    <form>
+                        <div class="mb-3">
+                            <label for="nome" class="form-label w-bold text-colored">Seu nome</label>
+                            <input type="text" id="nome" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label w-bold text-colored">Seu email</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefone" class="form-label w-bold text-colored" w-bold text-colored>Seu telefone (opcional)</label>
+                            <input type="tel" id="telefone" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensagem" class="form-label w-bold text-colored">Sua mensagem</label>
+                            <textarea class="form-control" id="mensagem" required></textarea>
+                        </div>
+                        <button type="submit" class="btn fw-bold">Enviar</button>
+                    </form>
+                </div>
+                <div class="col-md-5">
+                    <div class="row mt-4">
+                        <h3 class="section-title fs-4 text-colored">
+                            <i class="bi bi-cursor-fill"></i>
+                            Endereço
+                        </h3>
+                    </div>
+                    <p>
+                        Quinta Avenue 1999 - Brooklin - NY 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        $(document).ready(function(){
+            // Máscara para o telefone
+            $('#telefone').mask('(00) 00000-0000');
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
+</body>
+</html>
